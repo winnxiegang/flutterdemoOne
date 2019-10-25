@@ -80,6 +80,24 @@ class HomeContent2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      child: Stack(
+        alignment: Alignment.bottomCenter,
+        children: <Widget>[
+          Positioned(
+            child: Image.network("21111"),
+            left: 12,
+            top: 12,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class HomeContent3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
       /**
        * Stack 表示把里面的元素堆在一起
        * alignment 里面所有元素的位置

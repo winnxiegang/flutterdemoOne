@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+
+import 'package:flutter/material.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -12,12 +16,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primaryColor: Colors.amber),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("listview"),
+          title: Text("标题"),
           centerTitle: true,
         ),
-        body: HomeContent(),
+        body: HomePage(),
       ),
     );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
 
@@ -34,7 +45,7 @@ class HomeContent extends StatelessWidget {
           color: Colors.red,
           margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
           child: ListView(
-            scrollDirection: Axis.vertical,//容器里垂直排列 ，可修改
+            scrollDirection: Axis.vertical, //容器里垂直排列 ，可修改
             padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
             children: <Widget>[
               Text(
